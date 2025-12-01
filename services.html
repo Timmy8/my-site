@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Услуги — ТЦСОН Железнодорожного района г. Гомеля</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script defer src="assets/script.js"></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-block">
+            <div class="logo-mark">ТЦ</div>
+            <div class="logo-text">
+                <div class="logo-subtitle"><strong>Территориальный центр социального обслуживания населения<br>Железнодорожного района г. Гомеля</strong></div>
+            </div>
+        </div>
+        <button class="nav-toggle" aria-label="Меню">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="about.html" class="nav-link">О центре</a>
+            <a href="services.html" class="nav-link active">Услуги</a>
+            <a href="departments.html" class="nav-link">Отделения</a>
+            <a href="news.html" class="nav-link">Новости</a>
+            <a href="contacts.html" class="nav-link">Контакты</a>
+        </nav>
+    </div>
+</header>
+
+<main class="page-main">
+    <section class="page-header">
+        <div class="container">
+            <h1>Социальные услуги</h1>
+            <p class="page-lead">На этой странице вы можете ознакомиться с основными видами услуг, которые оказывает наш центр. Для получения подробной информации рекомендуем обратиться к специалистам по телефонам, указанным в разделе «Контакты».</p>
+            <div class="filter-wrap">
+                <label class="filter-label">
+                    Быстрый поиск по услугам
+                    <input type="text" id="serviceSearch" placeholder="Введите название услуги или категорию">
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="illustration">
+                <img src="assets/img/5.jpg" alt="Посетители центра во время получения социальных услуг">
+                <div class="illustration-caption">Социальные услуги подбираются индивидуально, с учётом состояния здоровья и жизненной ситуации человека.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="service-section" id="home-care">
+                <h2>Социальное обслуживание на дому</h2>
+                <p>Услуги предназначены для граждан пожилого возраста и людей с инвалидностью, нуждающихся в посторонней помощи в повседневной жизни.</p>
+                <div class="service-list js-service-list">
+                    <article class="service-item" data-tags="дом помощь покупка продукты лекарства уборка">
+                        <h3>Покупка продуктов и медикаментов</h3>
+                        <p>Осуществление покупок в магазинах и аптеках по поручению получателя социальных услуг.</p>
+                    </article>
+                    <article class="service-item" data-tags="дом уборка быт">
+                        <h3>Помощь по дому</h3>
+                        <p>Уборка жилого помещения, помощь в поддержании санитарного состояния жилья.</p>
+                    </article>
+                    <article class="service-item" data-tags="оплата коммунальные услуги дом">
+                        <h3>Оплата коммунальных услуг</h3>
+                        <p>Содействие в оплате коммунальных и иных услуг, связанных с проживанием.</p>
+                    </article>
+                    <article class="service-item" data-tags="сопровождение поликлиника дом">
+                        <h3>Сопровождение</h3>
+                        <p>Сопровождение к врачу, в организации социальной защиты и другие учреждения по необходимости.</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="service-section" id="day-care">
+                <h2>Отделение дневного пребывания</h2>
+                <p>Отделение дневного пребывания предоставляет возможность активного досуга, общения и участия в различных мероприятиях.</p>
+                <div class="service-list js-service-list">
+                    <article class="service-item" data-tags="клубы интересы общение досуг">
+                        <h3>Клубы по интересам</h3>
+                        <p>Проведение тематических встреч, кружков, творческих занятий для людей разных возрастов.</p>
+                    </article>
+                    <article class="service-item" data-tags="творчество мастерские досуг">
+                        <h3>Творческие мастерские</h3>
+                        <p>Занятия рукоделием, прикладным творчеством, участие в выставках и конкурсах.</p>
+                    </article>
+                    <article class="service-item" data-tags="лекции профилактика здоровье">
+                        <h3>Просветительские мероприятия</h3>
+                        <p>Беседы и лекции по вопросам здорового образа жизни, социальной адаптации, правовой грамотности.</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="service-section" id="family">
+                <h2>Социальное сопровождение семей</h2>
+                <p>Работа с семьями, находящимися в трудной жизненной ситуации, направлена на сохранение семьи и создание безопасной среды для детей.</p>
+                <div class="service-list js-service-list">
+                    <article class="service-item" data-tags="семья дети консультации психолог">
+                        <h3>Консультации специалистов</h3>
+                        <p>Консультации психолога, юриста, социального педагога по вопросам семейных отношений и защиты прав детей.</p>
+                    </article>
+                    <article class="service-item" data-tags="социальное сопровождение семья профилактика">
+                        <h3>Социальное сопровождение</h3>
+                        <p>Разработка индивидуального плана помощи семье, координация взаимодействия с другими службами.</p>
+                    </article>
+                    <article class="service-item" data-tags="помощь кризис сложная жизненная ситуация">
+                        <h3>Поддержка в кризисных ситуациях</h3>
+                        <p>Оказание помощи в разрешении острых конфликтов и кризисных ситуаций в семье.</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="service-section" id="other">
+                <h2>Иные виды услуг</h2>
+                <p>Центр также может оказывать другие виды услуг в соответствии с действующим законодательством и локальными нормативными актами.</p>
+                <div class="service-list js-service-list">
+                    <article class="service-item" data-tags="разовое обслуживание консультации документы">
+                        <h3>Разовые услуги</h3>
+                        <p>Предоставление разовых услуг по заявлению гражданина (например, сопровождение, помощь в оформлении документов).</p>
+                    </article>
+                    <article class="service-item" data-tags="платные услуги прайс стоимость">
+                        <h3>Платные услуги</h3>
+                        <p>Отдельные услуги могут оказываться на платной основе. Актуальную информацию о стоимости можно уточнить по телефону.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-block">
+            <div class="logo-mark footer-logo-mark">ТЦ</div>
+            <div class="footer-text">
+                <div>ТЦСОН Железнодорожного района г. Гомеля</div>
+                <div class="footer-sub">Официальный информационный ресурс учреждения</div>
+            </div>
+        </div>
+        <div class="footer-block">
+            <div>© 2025. При перепечатке материалов ссылка на сайт обязательна.</div>
+            <div><a href="contacts.html#feedback" class="footer-link">Обратная связь</a></div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
