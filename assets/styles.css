@@ -86,14 +86,8 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
     gap: 24px;
-}
-
-.logo-block {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    position: relative;
 }
 
 .logo-mark {
@@ -110,24 +104,33 @@ a:hover {
 }
 
 .logo-text {
-    display: flex;
-    flex-direction: column;
-    font-size: 19px;
+    line-height: 1.2;
 }
 
 .logo-title {
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 18px;
+    color: #345069; /* можно подправить под твой основной цвет */
+    margin-bottom: 2px;
 }
 
 .logo-subtitle {
-    font-size: 19px;
-    color: #4f647a;
+    font-size: 14px;
+    color: #3e5366;
 }
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto; /* отталкивает правую часть от логотипа */
+}
+
 
 .main-nav {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
 }
 
 .nav-link {
@@ -641,8 +644,9 @@ a:hover {
     display: grid;
     grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.4fr);
     gap: 24px;
-    x-align: flex-start;
+    align-items: flex-start;
 }
+
 
 .contacts-main h2 {
     margin-top: 0;
@@ -866,10 +870,10 @@ a:hover {
 }
 
 .logo-img {
-    width: 48px;      /* подбираешь под дизайн: 40–64px обычно ок */
-    height: 48px;
+    width: 56px;
+    height: 56px;
     object-fit: contain;
-    display: block;
+    flex-shrink: 0;
 }
 
 .map-link {
@@ -880,32 +884,27 @@ a:hover {
 .map-link:hover {
     text-decoration: none;
 }
+
 .social-links {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-left: 15px; /* Чтобы не прилипали к логотипу */
 }
 
 .social-icon {
-    width: 26px;
-    height: 26px;
-    display: block;
+    width: 32px;
+    height: 32px;
     object-fit: contain;
-    transition: opacity .2s;
+    border-radius: 50%;
+    display: block;
 }
+
 
 .social-links a:hover .social-icon {
-    opacity: .7;
+    opacity: 0.75;
 }
 
-.social-links, .social-icon {
+.social-links,
+.social-icon {
     flex-shrink: 0;
-}
-
-/* Если хочешь убрать иконки на мобилке */
-@media (max-width: 780px) {
-    .social-links {
-        display: none;
-    }
-}
+}   
