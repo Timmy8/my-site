@@ -787,6 +787,7 @@ a:hover {
     padding: 10px 0 14px;
 }
 
+
 .header-top {
     display: flex;
     align-items: center;
@@ -800,6 +801,7 @@ a:hover {
     align-items: center;
     gap: 10px;
     min-width: 0;
+    flex: 1;               
 }
 
 .logo-img {
@@ -819,28 +821,31 @@ a:hover {
 .header-top-right {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 16px;          
+    margin-left: 16px;
     flex-shrink: 0;
 }
 
+.header-address {
+    font-size: 14px;
+    color: #345069;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+.header-address:hover {
+    text-decoration: none;
+}
+
 .social-icon {
-    width: 28px;
-    height: 28px;
+    width: 34px;
+    height: 34px;
     display: block;
     object-fit: contain;
     border-radius: 50%;
     transition: opacity .2s ease;
 }
 
-.header-icon-link .header-icon-map {
-    font-size: 22px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header-top-right a:hover img,
-.header-top-right a:hover .header-icon-map {
+.header-top-right a:hover img {
     opacity: 0.75;
 }
 
@@ -848,7 +853,6 @@ a:hover {
 .header-bottom {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 16px;
 }
 
@@ -858,6 +862,27 @@ a:hover {
     gap: 24px;
 }
 
+.header-phones {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+    font-size: 14px;
+    color: #345069;
+    white-space: nowrap;
+}
+
+.header-phone {
+    text-decoration: none;
+    color: inherit;
+}
+.header-phone span {
+    font-weight: 600;
+}
+.header-phone:hover span {
+    text-decoration: underline;
+}
+
 .nav-toggle {
     display: none;
     border: none;
@@ -865,7 +890,6 @@ a:hover {
     padding: 6px;
     cursor: pointer;
 }
-
 .nav-toggle span {
     display: block;
     width: 20px;
@@ -891,11 +915,21 @@ a:hover {
 
     .header-top-right {
         align-self: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .header-title {
+        font-size: 15px;
     }
 
     .header-bottom {
         position: relative;
         align-items: center;
+    }
+
+    .header-phones {
+        display: none;
     }
 
     .main-nav {
