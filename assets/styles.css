@@ -801,7 +801,7 @@ a:hover {
     align-items: center;
     gap: 10px;
     min-width: 0;
-    flex: 1;               
+    flex: 1;
 }
 
 .logo-img {
@@ -815,25 +815,15 @@ a:hover {
     font-size: 16px;
     font-weight: 600;
     color: #345069;
-    line-height: 1.25;
+    line-height: 1.28;
 }
 
 .header-top-right {
     display: flex;
     align-items: center;
-    gap: 16px;          
+    gap: 12px;
     margin-left: 16px;
     flex-shrink: 0;
-}
-
-.header-address {
-    font-size: 14px;
-    color: #345069;
-    text-decoration: underline;
-    white-space: nowrap;
-}
-.header-address:hover {
-    text-decoration: none;
 }
 
 .social-icon {
@@ -862,25 +852,11 @@ a:hover {
     gap: 24px;
 }
 
-.header-phones {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-left: auto;
+.nav-address-link {
+    display: none;
     font-size: 14px;
     color: #345069;
-    white-space: nowrap;
-}
-
-.header-phone {
     text-decoration: none;
-    color: inherit;
-}
-.header-phone span {
-    font-weight: 600;
-}
-.header-phone:hover span {
-    text-decoration: underline;
 }
 
 .nav-toggle {
@@ -901,6 +877,24 @@ a:hover {
     margin-top: 4px;
 }
 
+
+.header-address-bar {
+    margin-top: 4px;
+}
+
+.header-address-link {
+    font-size: 14px;
+    color: #60728a;
+    text-decoration: none;
+    padding: 4px 0;
+    display: inline-block;
+    border-top: 1px solid rgba(0,0,0,0.03);
+}
+.header-address-link:hover {
+    text-decoration: underline;
+}
+
+
 @media (max-width: 780px) {
 
     .header-inner {
@@ -915,12 +909,6 @@ a:hover {
 
     .header-top-right {
         align-self: flex-start;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-
-    .header-title {
-        font-size: 15px;
     }
 
     .header-bottom {
@@ -928,7 +916,7 @@ a:hover {
         align-items: center;
     }
 
-    .header-phones {
+    .header-address-bar {
         display: none;
     }
 
@@ -949,6 +937,13 @@ a:hover {
         display: flex;
     }
 
+    .nav-address-link {
+        display: block;
+        margin-top: 4px;
+        padding-top: 4px;
+        border-top: 1px solid rgba(0,0,0,0.06);
+    }
+
     .nav-toggle {
         display: inline-flex;
         margin-left: auto;
@@ -956,3 +951,4 @@ a:hover {
         z-index: 60;
     }
 }
+
