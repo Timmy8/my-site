@@ -666,8 +666,13 @@ a:hover {
 .footer-block {
     display: flex;
     align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footer-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 .footer-logo-mark {
