@@ -11,22 +11,50 @@
 <body>
 <header class="site-header">
     <div class="container header-inner">
-        <!-- лого + текст -->
-        <div class="logo-block">
-            <img
-                src="assets/img/logo.png"
-                alt="ТЦСОН Железнодорожного района г. Гомеля"
-                class="logo-img"
-            >
-            <div class="logo-text">
-            <div class="logo-title">ТЦСОН</div>
-            <div class="logo-subtitle">Железнодорожного района г. Гомеля</div>
+
+        <!-- ВЕРХНЯЯ СТРОКА: ЛОГО + ТЕКСТ + ИКОНКИ -->
+        <div class="header-top">
+            <div class="header-top-left">
+                <img
+                    src="assets/img/logo.png"
+                    alt="ТЦСОН Железнодорожного района г. Гомеля"
+                    class="logo-img"
+                >
+                <div class="header-title">
+                    Территориальный центр социального обслуживания населения Железнодорожного района г. Гомеля
+                </div>
+            </div>
+
+            <div class="header-top-right">
+                <a href="https://share.google/M1DuSflJ3NpZnHXob"
+                   target="_blank"
+                   rel="noopener"
+                   class="header-icon-link"
+                   aria-label="Открыть адрес в Google Картах">
+                    <span class="header-icon header-icon-map">📍</span>
+                </a>
+
+                <a href="https://t.me/tcsonrw_gomel"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="Telegram">
+                    <img src="assets/img/tg_icon.png"
+                         alt="Telegram"
+                         class="social-icon">
+                </a>
+
+                <a href="https://instagram.com/mayflower_iznanka"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="Instagram">
+                    <img src="assets/img/inst_icon.png"
+                         alt="Instagram"
+                         class="social-icon">
+                </a>
+            </div>
         </div>
 
-        </div>
-
-        <!-- меню + соцсети (для десктопа) -->
-        <div class="header-right">
+        <div class="header-bottom">
             <nav class="main-nav">
                 <a href="index.html" class="nav-link active">Главная</a>
                 <a href="about.html" class="nav-link">О центре</a>
@@ -36,20 +64,11 @@
                 <a href="contacts.html" class="nav-link">Контакты</a>
             </nav>
 
-            <div class="social-links">
-                <a href="https://t.me/tcsonrw_gomel" target="_blank" rel="noopener" aria-label="Telegram">
-                    <img src="assets/img/tg_icon.png" alt="Telegram" class="social-icon">
-                </a>
-                <a href="https://instagram.com/mayflower_iznanka" target="_blank" rel="noopener" aria-label="Instagram">
-                    <img src="assets/img/inst_icon.png" alt="Instagram" class="social-icon">
-                </a>
-            </div>
+            <button class="nav-toggle" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
         </div>
 
-        <!-- кнопка меню для мобильных -->
-        <button class="nav-toggle" aria-label="Меню">
-            <span></span><span></span><span></span>
-        </button>
     </div>
 </header>
 
@@ -86,7 +105,7 @@
                     <li><a href="services.html#home-care">Социальное обслуживание на дому</a></li>
                     <li><a href="services.html#day-care">Отделение дневного пребывания</a></li>
                     <li><a href="services.html#family">Помощь семьям с детьми</a></li>
-                    <li><a href="contacts.html#appointment">Записаться на консультацию</a></li>
+                    <!--<li><a href="contacts.html#appointment">Записаться на консультацию</a></li>-->
                     <li><a href="https://psz.gov.by/" target="_blank" rel="noopener noreferrer">Записаться на приём через портал</a></li>
                 </ul>
                 <!-- <div class="notice">
@@ -167,13 +186,13 @@
             </div>
             <div class="news-list">
                 <article class="news-item">
-                    <div class="news-meta">01.11.2025 · Объявление</div>
+                    <div class="news-meta">· Объявление</div>
                     <h3>Изменение графика приема граждан</h3>
                     <p>Сообщаем об изменении графика приема граждан специалистами центра. Просим заранее ознакомиться с расписанием.</p>
                     <a href="news.html" class="link-inline-sm">Подробнее</a>
                 </article>
                 <article class="news-item">
-                    <div class="news-meta">15.10.2025 · Мероприятие</div>
+                    <div class="news-meta">· Мероприятие</div>
                     <h3>День пожилого человека</h3>
                     <p>В отделении дневного пребывания прошли праздничные мероприятия, посвященные Дню пожилого человека.</p>
                     <a href="news.html" class="link-inline-sm">Подробнее</a>
@@ -192,12 +211,12 @@
                     <h2 class="section-title">Как нас найти</h2>
                     <p>Мы находимся в г. Гомеле. Уточните адрес и маршруты проезда в разделе «Контакты».</p>
                     <ul class="contact-list">
-                        <li><strong>Телефон приёмной:</strong> +375 (232) 34-99-56</li>
+                        <li><strong>Телефон приёмной:</strong> +375 (232) 21-09-46</li>
                         <li><strong>E-mail:</strong> officer@tcsonrw_gomel.by</li>
                         <li><strong>Адрес:</strong> <a href="https://share.google/M1DuSflJ3NpZnHXob" target="_blank" rel="noopener noreferrer" class="map-link"> ул. 50 лет БССР 19, Гомель, Гомельская область, Беларусь </a></li> 
                     </ul>
                     <a href="contacts.html" class="btn btn-primary">Перейти в раздел «Контакты»</a>
-                    <!--<a href="https://psz.gov.by/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Записаться на приём</a>-->
+                    <a href="https://psz.gov.by/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Записаться на приём</a>
                 </div>
                 
 <div class="contacts-panel">
