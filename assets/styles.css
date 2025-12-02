@@ -871,3 +871,13 @@ a:hover {
     object-fit: contain;
     display: block;
 }
+
+.map-link {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.map-link:hover {
+    text-decoration: none;
+}
+
