@@ -880,4 +880,32 @@ a:hover {
 .map-link:hover {
     text-decoration: none;
 }
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px; /* Чтобы не прилипали к логотипу */
+}
 
+.social-icon {
+    width: 26px;
+    height: 26px;
+    display: block;
+    object-fit: contain;
+    transition: opacity .2s;
+}
+
+.social-links a:hover .social-icon {
+    opacity: .7;
+}
+
+.social-links, .social-icon {
+    flex-shrink: 0;
+}
+
+/* Если хочешь убрать иконки на мобилке */
+@media (max-width: 780px) {
+    .social-links {
+        display: none;
+    }
+}
