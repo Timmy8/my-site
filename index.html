@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/styles.css">
     <script defer src="assets/script.js"></script>
     <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="site-header">
@@ -19,20 +20,27 @@
                     alt="ТЦСОН Железнодорожного района г. Гомеля"
                     class="logo-img"
                 >
-                <div class="header-title">
+                <div class="header-title" style="font-weight: 500">
                     Территориальный центр социального обслуживания населения<br>
                     Железнодорожного района г. Гомеля
                 </div>
             </div>
 
             <div class="header-top-right">
+                <div class="header-right-item">
+                    <span class="header-right-item-label">Телефон приёмной</span>
+                    <span class="header-right-item-value"><a href="tel:+375232349792">+375 (232) 34-97-92</a></span>
+                </div>
+                <div class="header-right-item">
+                    <span class="header-right-item-label">Телефон доверия</span>
+                    <span class="header-right-item-value"><a href="tel:+375232349792">+375 (232) 34-97-92</a></span>
+                </div>
                 <a href="https://t.me/tcsonrw_gomel"
                    target="_blank"
                    rel="noopener"
                    aria-label="Telegram">
                     <img src="assets/img/tg_icon.png" alt="Telegram" class="social-icon">
                 </a>
-
                 <a href="https://instagram.com/mayflower_iznanka"
                    target="_blank"
                    rel="noopener"
@@ -51,62 +59,55 @@
                 <a href="news.html" class="nav-link">Новости</a>
                 <a href="contacts.html" class="nav-link">Контакты</a>
 
-                <a href="https://share.google/M1DuSflJ3NpZnHXob"
+                <a href="https://maps.app.goo.gl/857poMPSDnpspjt68"
                    class="nav-address-link"
                    target="_blank"
                    rel="noopener">
-                    ул. 50 лет БССР 19, Гомель
+                    <img src="assets/img/map.png" alt="Показать на карте" class="map-icon">ул. 50 лет БССР 19, Гомель
                 </a>
             </nav>
+
+            <a href="https://maps.app.goo.gl/857poMPSDnpspjt68"
+               class="menu-address"
+               target="_blank"
+               rel="noopener">
+                <img src="assets/img/map.png" alt="Показать на карте" class="map-icon">ул. 50 лет БССР 19, Гомель
+            </a>
 
             <button class="nav-toggle" aria-label="Меню">
                 <span></span><span></span><span></span>
             </button>
         </div>
+
     </div>
 </header>
-
-
-
-
 
 <main>
     <section class="hero">
         <div class="container hero-inner">
             <div class="hero-text">
-                <h1>Поддержка и помощь рядом с вами</h1>
+                <h1 style="letter-spacing: -1px;">Поддержка и помощь рядом с вами</h1>
                 <p>Мы оказываем социальные услуги пожилым людям, людям с инвалидностью, семьям с детьми и всем, кто оказался в трудной жизненной ситуации.</p>
                 <div class="hero-actions">
-    <a href="services.html" class="btn btn-primary">Посмотреть услуги</a>
-    <a href="contacts.html" class="btn btn-outline">Как с нами связаться</a>
-    <a href="https://psz.gov.by/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Записаться на приём</a>
-</div>
+                    <a href="services.html" class="btn btn-primary">Посмотреть услуги</a>
+                    <a href="contacts.html" class="btn btn-outline">Как с нами связаться</a>
+                    <a href="https://psz.gov.by/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Записаться на приём</a>
+                </div>
                 <div class="hero-meta">
                     <div class="meta-item">
                         <span class="meta-label">Телефон доверия</span>
-                        <span class="meta-value">+375 (232) 34-97-92</span>
+                        <span class="meta-value"><a href="tel:+375232349792">+375 (232) 34-97-92</a></span>
                     </div>
                     <div class="meta-item">
                         <span class="meta-label">График работы</span>
                         <span class="meta-value">пн–пт: 8:30–13:00, 14:00–17:30</span>
                     </div>
                 </div>
-                <div class="hero-illustration">
-                    <img src="assets/img/1.jpg" alt="Посетители территориального центра социального обслуживания в Гомеле">
-                </div>
             </div>
             <div class="hero-panel">
-                <h2>Частые запросы</h2>
-                <ul class="quick-links">
-                    <li><a href="services.html#home-care">Социальное обслуживание на дому</a></li>
-                    <li><a href="services.html#day-care">Отделение дневного пребывания</a></li>
-                    <li><a href="services.html#family">Помощь семьям с детьми</a></li>
-                    <!--<li><a href="contacts.html#appointment">Записаться на консультацию</a></li>-->
-                    <li><a href="https://psz.gov.by/" target="_blank" rel="noopener noreferrer">Записаться на приём через портал</a></li>
-                </ul>
-                <!-- <div class="notice">
-                    <p><strong>Важно:</strong> перед визитом уточните перечень необходимых документов по телефону или в разделе «Услуги».</p>
-                </div> -->
+                <img src="assets/img/1.png"
+                     alt="Здание территориального центра социального обслуживания населения"
+                     class="hero-panel-photo">
             </div>
         </div>
     </section>
@@ -115,7 +116,6 @@
         <div class="container">
             <h2 class="section-title">Кому мы помогаем</h2>
             <div class="illustration">
-                <img src="assets/img/2.jpg" alt="Посетители центра во время мероприятия">
                 <div class="illustration-caption">В нашем центре всегда готовы выслушать, поддержать и помочь в решении жизненных вопросов.</div>
             </div>
             <div class="cards-grid">
@@ -207,9 +207,9 @@
                     <h2 class="section-title">Как нас найти</h2>
                     <p>Мы находимся в г. Гомеле. Уточните адрес и маршруты проезда в разделе «Контакты».</p>
                     <ul class="contact-list">
-                        <li><strong>Телефон приёмной:</strong> +375 (232) 21-09-46</li>
+                        <li><strong>Телефон приёмной:</strong> <a href="tel:+375232210946">+375 (232) 21-09-46</a></li>
                         <li><strong>E-mail:</strong> officer@tcsonrw_gomel.by</li>
-                        <li><strong>Адрес:</strong> <a href="https://share.google/M1DuSflJ3NpZnHXob" target="_blank" rel="noopener noreferrer" class="map-link"> ул. 50 лет БССР 19, Гомель, Гомельская область, Беларусь </a></li> 
+                        <li><strong>Адрес:</strong> <a href="https://maps.app.goo.gl/857poMPSDnpspjt68" target="_blank" rel="noopener noreferrer" class="map-link"> ул. 50 лет БССР 19, Гомель, Гомельская область, Беларусь </a></li> 
                     </ul>
                     <a href="contacts.html" class="btn btn-primary">Перейти в раздел «Контакты»</a>
                     <a href="https://psz.gov.by/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Записаться на приём</a>
