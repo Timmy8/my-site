@@ -1257,4 +1257,10 @@ a:hover {
         font-weight: 500;
         margin-top: 2px;
     }
+
+    @media (max-width: 420px) {
+        .header-right-item {
+            flex: 1 1 100%;
+        }
+    }
 }
